@@ -1,6 +1,6 @@
 import React from 'react';
 import { socket } from './services'
-import { NavBar } from './components'
+import { NavBar, RegisterPage, LoginCard } from './components'
 import logo from './logo.svg';
 import './App.css';
 
@@ -15,6 +15,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <NavBar/>
+        <RegisterPage/>
+        <LoginCard/>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
